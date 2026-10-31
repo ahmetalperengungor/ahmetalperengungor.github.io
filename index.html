@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmet Alperen Güngör</title>
+  <meta name="description" content="Ahmet Alperen Güngör — M.Sc. student in Machine Learning at the University of Tübingen.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+
+    <!-- ===================== HEADER ===================== -->
+    <header class="profile">
+      <!-- TODO: Put your photo in the assets/ folder (e.g. assets/photo.jpg) and change src below.
+           A square image, roughly 400x400 px, works best. -->
+      <img class="avatar" src="assets/profile-placeholder.svg" alt="Photo of Ahmet Alperen Güngör">
+
+      <div class="profile-text">
+        <h1>Ahmet Alperen Güngör</h1>
+        <p class="role">M.Sc. Student in Machine Learning</p>
+        <p class="affiliation"><a href="https://uni-tuebingen.de/en/">University of Tübingen</a></p>
+
+        <nav class="links">
+          <a href="mailto:ahmetalperengungor@gmail.com">Email</a>
+          <a href="Ahmet_Alperen_Gungor_CV.pdf">CV</a>
+          <a href="https://github.com/ahmetalperengungor">GitHub</a>
+          <a href="https://www.linkedin.com/in/ahmetalperengungor">LinkedIn</a>
+          <!-- Uncomment and fill in if you create these profiles:
+          <a href="https://scholar.google.com/citations?user=YOUR_ID">Google Scholar</a>
+          <a href="https://orcid.org/0000-0000-0000-0000">ORCID</a>
+          -->
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I am a master's student in Machine Learning at the University of Tübingen, fully funded by my
+        DAAD scholarship. I also work as a student assistant in
+        <a href="https://www.mackelab.org">Prof. Jakob Macke's Machine Learning in Science lab</a> on
+        LLM-based scientific model discovery, where I develop an open-source task interface for
+        proposing and evaluating scientific models across many domains through a single API. Proposal
+        is decoupled from fitting and evaluation: the LLM focuses on discovery while shared, pluggable
+        fitters and metrics score its candidates and return detailed feedback it can use to refine them.
+      </p>
+      <p>
+        I received my B.Sc. with high honors in Computer Science &amp; Engineering, with a minor in
+        Business Analytics, from Sabancı University, including an exchange semester at the University
+        of Twente. Before Tübingen, I gained research experience on deep learning methods for visual
+        place recognition in autonomous driving at TU Berlin, X-ray spectral analysis of black hole
+        binaries, and deep learning–based Alzheimer's diagnosis from OCT scans.
+      </p>
+    </section>
+
+    <!-- ===================== PUBLICATIONS ===================== -->
+    <section id="publications">
+      <h2>Publications &amp; Presentations</h2>
+      <!-- PDFs are hosted at https://github.com/ahmetalperengungor/Publications.
+           Preview images are the first page of each PDF, in assets/pubs/. To add a new one, render
+           the first page with: pdftoppm -f 1 -l 1 -png -scale-to 900 -singlefile paper.pdf assets/pubs/name -->
+      <ul class="pubs">
+        <li>
+          <p class="pub-title">A Cross-Domain Task Interface for LLM-Based Scientific Model Discovery
+            <a class="pdf-link" href="https://github.com/ahmetalperengungor/Publications/blob/main/LLM-based%20Model%20Discovery.pdf">[PDF]</a></p>
+          <p class="pub-authors"><strong>A. Alperen Güngör</strong>, Stefan Wahl, Daniel Gedon, Jakob H. Macke</p>
+          <!-- TODO: Check the year of the summer school. -->
+          <p class="pub-venue"><em>Poster, Cambridge ELLIS Summer School on Probabilistic Machine Learning, 2026</em></p>
+          <p class="pub-desc">An interface with 23 tasks across 11 scientific domains, from ODE epidemiology models to cognitive neuroscience. It gives LLM-based discovery methods standardized prompts, code skeletons, sandboxed execution and scoring.</p>
+          <a class="pub-preview" href="https://github.com/ahmetalperengungor/Publications/blob/main/LLM-based%20Model%20Discovery.pdf">
+            <img src="assets/pubs/llm-model-discovery.png" alt="First page of the LLM-based model discovery poster" loading="lazy">
+          </a>
+        </li>
+        <li>
+          <p class="pub-title">Astrophysical Data Analysis
+            <a class="pdf-link" href="https://github.com/ahmetalperengungor/Publications/blob/main/Astrophysical%20Data%20Analysis.pdf">[PDF]</a></p>
+          <p class="pub-authors"><strong>Ahmet Alperen Güngör</strong>, Batuhan Bahçeci, Beren Aydoğan, Eren Küçükkurt, İdil Yelçe, Emrah Kalemci</p>
+          <p class="pub-venue"><em>Sabancı University Program for Undergraduate Research (PURE), Fall 2023–2024</em></p>
+          <p class="pub-desc">X-ray spectral analysis of black hole binaries from NASA NICER hard-state data for MAXI J1820+070, using Python and XSPEC.</p>
+          <a class="pub-preview" href="https://github.com/ahmetalperengungor/Publications/blob/main/Astrophysical%20Data%20Analysis.pdf">
+            <img src="assets/pubs/astrophysical-data-analysis.png" alt="First page of the Astrophysical Data Analysis paper" loading="lazy">
+          </a>
+        </li>
+        <li>
+          <p class="pub-title">Optical Coherence Tomography Scans and Deep Learning Based Alzheimer's Disease Diagnosis
+            <a class="pdf-link" href="https://github.com/ahmetalperengungor/Publications/blob/main/Optical%20Coherence%20Tomography%20(and%20Angiography)%20Scans%20and%20Deep%20Learning-Based%20Alzheimer's%20Disease%20Diagnosis.pdf">[PDF]</a></p>
+          <p class="pub-authors"><strong>Ahmet Alperen Güngör</strong>, Serra Yılmaz, Yasemin Turkan</p>
+          <!-- TODO: The PDF header says "Spring 2021-2022" but your CV says 03/2023 – 06/2023. Check which is right. -->
+          <p class="pub-venue"><em>Sabancı University Program for Undergraduate Research (PURE), 2023</em></p>
+          <p class="pub-desc">Transfer learning on 3D retinal OCT scans for early Alzheimer's diagnosis, comparing CNN backbones (ResNet, Inception, EfficientNet, Med3D).</p>
+          <a class="pub-preview" href="https://github.com/ahmetalperengungor/Publications/blob/main/Optical%20Coherence%20Tomography%20(and%20Angiography)%20Scans%20and%20Deep%20Learning-Based%20Alzheimer's%20Disease%20Diagnosis.pdf">
+            <img src="assets/pubs/oct-alzheimers.png" alt="First page of the OCT Alzheimer's diagnosis paper" loading="lazy">
+          </a>
+        </li>
+        <li>
+          <p class="pub-title">Localization by Visual Place Recognition
+            <a class="pdf-link" href="https://github.com/ahmetalperengungor/Publications/blob/main/Localization%20by%20Visual%20Place%20Recognition.pdf">[Slides]</a></p>
+          <p class="pub-authors"><strong>Ahmet Alperen Güngör</strong> · BeIntelli project, DAI-Labor, TU Berlin</p>
+          <p class="pub-venue"><em>2023 Internship Group Presentations, Berlin, 31.08.2023</em></p>
+          <p class="pub-desc">Estimating the GPS position of an autonomous vehicle from RGB camera images. Combining MixVPR with an MLP regressor reduced error by more than 35% on the Berlin dataset.</p>
+          <a class="pub-preview" href="https://github.com/ahmetalperengungor/Publications/blob/main/Localization%20by%20Visual%20Place%20Recognition.pdf">
+            <img src="assets/pubs/visual-place-recognition.png" alt="Overview and results slides of the visual place recognition presentation" loading="lazy">
+          </a>
+        </li>
+        <li>
+          <p class="pub-title">Reconstruction of Rawls's Arguments in Algorithmic Allocation: A Mathematical Soft Threshold Model
+            <a class="pdf-link" href="https://github.com/ahmetalperengungor/Publications/blob/main/Rawls%20Reconstruction%20on%20Algorithmic%20Allocation.pdf">[PDF]</a></p>
+          <p class="pub-authors"><strong>Ahmet Alperen Güngör</strong></p>
+          <!-- TODO: Add the semester/year. -->
+          <p class="pub-venue"><em>Essay, Ethics of Machine Learning Seminar, University of Tübingen</em></p>
+          <p class="pub-desc">Reconstructs Rawls's argument for the difference principle and applies it to the allocation step of algorithmic decision-making, proposing a simple soft-threshold welfare function.</p>
+          <a class="pub-preview" href="https://github.com/ahmetalperengungor/Publications/blob/main/Rawls%20Reconstruction%20on%20Algorithmic%20Allocation.pdf">
+            <img src="assets/pubs/rawls-algorithmic-allocation.png" alt="First page of the Rawls algorithmic allocation essay" loading="lazy">
+          </a>
+        </li>
+        <li>
+          <p class="pub-title">The Blind Eye of Technology: Ethical Impacts of Generative AI
+            <a class="pdf-link" href="https://github.com/ahmetalperengungor/Publications/blob/main/Blind%20Eye%20of%20Technology%20Essay.pdf">[PDF]</a></p>
+          <p class="pub-authors"><strong>Ahmet Alperen Güngör</strong></p>
+          <p class="pub-venue"><em>Essay, Professional and Academic Development, University of Twente, 2024</em></p>
+          <a class="pub-preview" href="https://github.com/ahmetalperengungor/Publications/blob/main/Blind%20Eye%20of%20Technology%20Essay.pdf">
+            <img src="assets/pubs/blind-eye-of-technology.png" alt="Cover page of The Blind Eye of Technology essay" loading="lazy">
+          </a>
+        </li>
+        <li>
+          <p class="pub-title">Yıldızların Yaşamına Kısa Bir Bakış <span class="muted">(A Brief Look at the Life of Stars)</span>
+            <a class="pdf-link" href="https://github.com/ahmetalperengungor/Publications/blob/main/Y%C4%B1ld%C4%B1zlar%C4%B1n%20Ya%C5%9Fam%C4%B1na%20K%C4%B1sa%20Bir%20Bak%C4%B1%C5%9F%20-%20Ahmet%20Alperen%20G%C3%BCng%C3%B6r.docx.pdf">[PDF]</a></p>
+          <p class="pub-authors"><strong>Ahmet Alperen Güngör</strong></p>
+          <p class="pub-venue"><em>Science Canteen, popular-science article in Turkish</em></p>
+          <a class="pub-preview" href="https://github.com/ahmetalperengungor/Publications/blob/main/Y%C4%B1ld%C4%B1zlar%C4%B1n%20Ya%C5%9Fam%C4%B1na%20K%C4%B1sa%20Bir%20Bak%C4%B1%C5%9F%20-%20Ahmet%20Alperen%20G%C3%BCng%C3%B6r.docx.pdf">
+            <img src="assets/pubs/yildizlarin-yasami.png" alt="First page of Yıldızların Yaşamına Kısa Bir Bakış" loading="lazy">
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <!-- Course projects from github.com/ahmetalperengungor, newest first.
+           Copy a <li> block to add more. -->
+      <ul class="pubs">
+        <li>
+          <p class="pub-title">Prompting Small LLMs for Turkish Financial Event Detection</p>
+          <p class="pub-venue"><em>Understanding Language Models · University of Tübingen</em></p>
+          <p class="pub-desc">Tests whether small open LLMs (3–4B) detect high-impact events in Turkish financial headlines better with English translation or few-shot prompting. Uses 850 self-labelled headlines and compares against a keyword lexicon and frontier LLMs.</p>
+          <p class="tags"><span>Python</span><span>LLMs</span><span>NLP</span></p>
+          <p class="pub-links">
+            <a href="https://github.com/ahmetalperengungor/UT_UnderstandingLM_Course_Project">Code</a>
+            <a href="https://github.com/ahmetalperengungor/UT_UnderstandingLM_Course_Project/blob/main/paper.pdf">Report</a>
+          </p>
+        </li>
+        <li>
+          <p class="pub-title">CrossQ-SAC: RL Agent for a Hockey Tournament</p>
+          <p class="pub-venue"><em>Reinforcement Learning · University of Tübingen</em></p>
+          <p class="pub-desc">A continuous-control agent that goes from SAC to SAC v2 to CrossQ, which removes target networks in favor of batch normalization. It was trained and deployed in the course's hockey tournament.</p>
+          <p class="tags"><span>Python</span><span>PyTorch</span><span>Reinforcement Learning</span></p>
+          <p class="pub-links">
+            <a href="https://github.com/ahmetalperengungor/UT_Reinforcement_Learning_Project">Code</a>
+          </p>
+        </li>
+        <li>
+          <p class="pub-title">OUATIH: The Film Industry After COVID-19</p>
+          <p class="pub-venue"><em>Data Literacy · University of Tübingen · WiSe 2025/26</em></p>
+          <p class="pub-desc">Measures structural shifts in the film industry across pre-COVID, COVID and post-COVID periods using TMDb and IMDb data, with an XGBoost classifier and statistical tests.</p>
+          <p class="tags"><span>Python</span><span>XGBoost</span><span>Data Analysis</span></p>
+          <p class="pub-links">
+            <a href="https://github.com/ahmetalperengungor/UT_Data_Literacy_Project">Code</a>
+            <a href="https://github.com/ahmetalperengungor/UT_Data_Literacy_Project/blob/master/report.pdf">Report</a>
+          </p>
+        </li>
+        <li>
+          <p class="pub-title">NoteBridge: Forum App for Musicians</p>
+          <p class="pub-venue"><em>Web Technology · University of Twente · Spring 2024</em></p>
+          <p class="pub-desc">An interactive forum web app for musicians, built for the company NoteBridge by a team of four.</p>
+          <p class="tags"><span>Java</span><span>PostgreSQL</span></p>
+          <p class="pub-links">
+            <a href="https://github.com/ahmetalperengungor/NoteBridge-App">Code</a>
+          </p>
+        </li>
+        <li>
+          <p class="pub-title">DiSUcord: Client–Server Messaging App</p>
+          <p class="pub-venue"><em>CS408 Computer Networks · Sabancı University · Fall 2023</em></p>
+          <p class="pub-desc">A client–server messaging application built on sockets.</p>
+          <p class="tags"><span>C#</span><span>Networking</span></p>
+          <p class="pub-links">
+            <a href="https://github.com/ahmetalperengungor/CS408_FALL23_PROJECT_Disucord_App">Code</a>
+          </p>
+        </li>
+        <li>
+          <p class="pub-title">Quiz Ninja: Mobile Quiz App</p>
+          <p class="pub-venue"><em>CS310 Mobile Application Development · Sabancı University · Fall 2023</em></p>
+          <p class="pub-desc">A mobile quiz application developed in a team of two.</p>
+          <p class="tags"><span>Java</span><span>Android</span></p>
+          <p class="pub-links">
+            <a href="https://github.com/ahmetalperengungor/CS310_FALL23_PROJECT_Quiz_Ninja_Mobile_App">Code</a>
+          </p>
+        </li>
+        <li>
+          <p class="pub-title">Weezart: Music Analysis &amp; Recommendation Platform</p>
+          <p class="pub-venue"><em>Software Engineering team project · Sabancı University</em></p>
+          <p class="pub-desc">A web and mobile platform for managing your music library, getting recommendations and analyzing your and your friends' taste through the Spotify API. I worked on the backend team.</p>
+          <p class="tags"><span>Java Spring Boot</span><span>MySQL</span><span>Azure</span></p>
+          <p class="pub-links">
+            <a href="https://github.com/ahmetalperengungor/Weezart-App">Code</a>
+          </p>
+        </li>
+        <li>
+          <p class="pub-title">Elevator Controller in Verilog</p>
+          <p class="pub-venue"><em>CS303 Logic &amp; Digital System Design · Sabancı University · Fall 2022</em></p>
+          <p class="pub-desc">A roughly 1000-line hardware design of an elevator control system.</p>
+          <p class="tags"><span>Verilog</span><span>FPGA</span></p>
+          <p class="pub-links">
+            <a href="https://github.com/ahmetalperengungor/CS303_FALL22_PROJECT_Elevator_Verilog">Code</a>
+          </p>
+        </li>
+      </ul>
+      <p class="footnote">
+        Coursework and homeworks:
+        <a href="https://github.com/ahmetalperengungor/Tubingen_University_Homeworks">Tübingen</a> ·
+        <a href="https://github.com/ahmetalperengungor/Sabanci_University_Homeworks">Sabancı</a>
+      </p>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section id="education">
+      <h2>Education</h2>
+      <ul class="entries">
+        <li>
+          <div class="entry-head">
+            <span><strong>M.Sc. in Machine Learning</strong>, University of Tübingen</span>
+            <span class="date">2025 – present</span>
+          </div>
+          <p class="entry-detail">Fully funded by a DAAD master's scholarship.</p>
+        </li>
+        <li>
+          <div class="entry-head">
+            <span><strong>Exchange Semester</strong>, University of Twente, Netherlands</span>
+            <span class="date">Spring 2024</span>
+          </div>
+          <p class="entry-detail">Term GPA 4.0, ranked #1.</p>
+        </li>
+        <li>
+          <div class="entry-head">
+            <span><strong>B.Sc. in Computer Science &amp; Engineering</strong>, Sabancı University</span>
+            <span class="date">2020 – 2025</span>
+          </div>
+          <p class="entry-detail">Minor in Business Analytics. GPA 3.77/4.00, Dean's High Honor List every semester. Full scholarship and Sakıp Sabancı High Success Scholarship.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul class="entries">
+        <li>
+          <div class="entry-head">
+            <span><strong>Student Assistant &amp; ELLIS Guest Researcher</strong>, Machine Learning in Science Lab, University of Tübingen</span>
+            <span class="date">02/2026 – present</span>
+          </div>
+          <p class="entry-detail">LLM-based scientific model discovery with Prof. Jakob Macke: a decoupled task interface where LLMs propose models and pluggable fitters and metrics evaluate them.</p>
+        </li>
+        <li>
+          <div class="entry-head">
+            <span><strong>Full Stack Software Engineer</strong>, Beakwise, Istanbul</span>
+            <span class="date">07/2024 – 07/2025</span>
+          </div>
+          <p class="entry-detail">Insurance sales portal and Customer Data Platform in Rust (Actix-Web) and Vue.js.</p>
+        </li>
+        <li>
+          <div class="entry-head">
+            <span><strong>Undergraduate Researcher</strong>, Sabancı PURE, Istanbul</span>
+            <span class="date">10/2023 – 01/2024</span>
+          </div>
+          <p class="entry-detail">X-ray spectral analysis of black hole binaries with Prof. Kalemci.</p>
+        </li>
+        <li>
+          <div class="entry-head">
+            <span><strong>AI Research Intern</strong>, DAI-Labor, TU Berlin &amp; GT-ARC</span>
+            <span class="date">07/2023 – 09/2023</span>
+          </div>
+          <p class="entry-detail">Visual place recognition for autonomous vehicle localization (BeIntelli project).</p>
+        </li>
+        <li>
+          <div class="entry-head">
+            <span><strong>Undergraduate Researcher</strong>, Sabancı PURE, Istanbul</span>
+            <span class="date">03/2023 – 06/2023</span>
+          </div>
+          <p class="entry-detail">Deep learning for early Alzheimer's diagnosis from 3D OCT scans.</p>
+        </li>
+        <li>
+          <div class="entry-head">
+            <span><strong>AI/ML Engineer Intern</strong>, SemperTech, Istanbul</span>
+            <span class="date">02/2023 – 04/2023</span>
+          </div>
+          <p class="entry-detail">Intent detection and slot filling for a smart-appliance chatbot (Keras).</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer>
+      <!-- TODO: Update the date whenever you edit the page. -->
+      <p>© 2026 Ahmet Alperen Güngör · Last updated: October 2026</p>
+    </footer>
+
+  </main>
+</body>
+</html>
